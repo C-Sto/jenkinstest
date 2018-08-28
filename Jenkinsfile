@@ -16,6 +16,6 @@ node {
 
    stage('Build Container Image') {
         println "Build container Image ${params.toolsServer}"
-        sh "sudo docker tag ok:latest ${params.toolsServer}:5000/ok:latest"
+        sh "echo 'test ${params.toolsServer}:5000/ok'"
    }
 }
